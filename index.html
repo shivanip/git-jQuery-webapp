@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>
+      My Github Webapp
+    </title>
+
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src = "script.js"></script>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+
+  </head>
+
+  <body>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li class="active"><a href="#">About</a></li>
+                      <li class="active"><a href="#">Comments</a></li>
+                    </ul>
+        </div>
+
+        <div id = "main" class="container">
+
+          <h1>The Github App</h1>
+
+          <p>Enter the Github Username to fetch the profile info via AJAX and JSON.</p>
+
+          <input type="text" name="gitusername" class="gitusername" id="gitusername" placeholder="Enter Username">
+          <br>
+
+          <br><button type = "button" class="click-me btn btn-primary">Git Me!</button><br>
+
+          <div id = "recieved-data" class="clearfix"></div>
+          <div id="twitter-feeds" class="clearfix"></div>
+
+        </div>
+  
+
+  </body>
+
+</html>
