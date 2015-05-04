@@ -1,4 +1,4 @@
-var set = false;
+
 $(document).ready(function(){
   $(".click-me").on("click", function(event){
 
