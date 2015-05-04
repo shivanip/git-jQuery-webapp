@@ -1,3 +1,4 @@
+var set = false;
 $(document).ready(function(){
   $(".click-me").on("click", function(event){
 
@@ -5,7 +6,9 @@ $(document).ready(function(){
     var username = $("#gitusername").val();
     var requesturi = "https://api.github.com/users/"+username;
     var reposuri = requesturi+"/repos";
+    var repos;
     var userOutput;
+
 
     if (!username){
       alert("Please enter a valid username");
@@ -36,7 +39,6 @@ $(document).ready(function(){
 
     });// End of the first ajax call.
 
-    var repos;
 
     $.getJSON(reposuri, function(json){
         repos = json;
@@ -54,6 +56,7 @@ $(document).ready(function(){
       }); // End of the second ajax call.
     });// End of the second ajax call.
 
+
     $(function() {
       var availableTags = ["shivanip", 
                           "roseweixel", 
@@ -63,4 +66,7 @@ $(document).ready(function(){
             source: availableTags
         });
     });
+
+
+
 });
