@@ -18,20 +18,20 @@
 
   <body>
 
-        <div id = "main" class="container">
+        <div id = "main" class="container-fluid ">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h1>The Github App</h1>
 
-          <h1>The Github App</h1>
+            <p>Enter the Github Username to fetch the profile info via AJAX and JSON.</p>
 
-          <p>Enter the Github Username to fetch the profile info via AJAX and JSON.</p>
+            <input type="text" name="gitusername" class="gitusername" id="gitusername" placeholder="Enter Username">
+            <br>
 
-          <input type="text" name="gitusername" class="gitusername" id="gitusername" placeholder="Enter Username">
-          <br>
+            <br><button type = "button" class="click-me btn btn-primary">Git Me!</button><br>
 
-          <br><button type = "button" class="click-me btn btn-primary">Git Me!</button><br>
-
-          <div id = "recieved-data" class="clearfix"></div>
-          <div id="twitter-feeds" class="clearfix"></div>
-
+            <div id = "recieved-data" class="clearfix"></div>
+            <div id="twitter-feeds" class="clearfix"></div>
+          </div>
         </div>
   
 
