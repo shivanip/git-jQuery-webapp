@@ -31,7 +31,7 @@ $(document).ready(function(){
         userOutput = '<h2>'+name+' <span class="profile-name">(@<a href="'+profile+'" target="_blank">'+username+'</a>)</span></h2>';
         userOutput = userOutput+'<img src="'+avatarUrl+'" height="90" width="90" alt='+username+'>';
         userOutput = userOutput+"<p>Followers: "+numOfFollowers+"<br>Follwing: "+numOfFollowing+"<br>Number of Repos: "+numOfRepos+"</p><h3>Available Repos:</h3>";
-        userOutput = userOutput+"<div class = 'repos-sec clearfix'></div>"
+        userOutput = userOutput+"<div class = 'repos-sec clearfix'>"
 
         $("#recieved-data").append(userOutput);
         // console.log(json);
@@ -48,8 +48,8 @@ $(document).ready(function(){
         }else{
           $.each(repos, function(i){   
             var repoOutput;         
-            // console.log(repos[i]);
-            repoOutput = "<ul><li><a href='"+repos[i].html_url+"'>"+repos[i].name+"</a></li></ul>";
+             // console.log(repos[i]);
+            repoOutput = "<ul><a class = 'btn btn-success' href='"+repos[i].html_url+"'>"+repos[i].name+"</a></ul></div>";
             $("#recieved-data").append(repoOutput);
           });
         } // End of the else statement.

@@ -3376,3 +3376,24 @@ a.list-group-item-danger.active:focus {
 .panel-default > .panel-heading {
   background-color: #464545;
 }
+
+.btn-success {
+  color: #ffffff;
+  background-color: #00bc8c;
+  border-color: #00bc8c;
+  font-weight: bold;
+  padding: 6px 6px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*.repos-sec ul a {
+  font-weight: bold;
+  padding: 6px 9px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}*/
